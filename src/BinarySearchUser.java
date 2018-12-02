@@ -12,7 +12,7 @@ public class BinarySearchUser
   {
           final String ARRAY_MESSAGE =
                "The array on which binary searches will be performed is:\n" +
-               "Ada, Ben, Carol, Dave, Ed, Frank, Gerri, Helen, Iggy, Joan";
+               "Ada, Ben, Carol, Dave, Ed, Frank, Gerri, Helen, Iggy, Joan, Alan";
 
           final String SENTINEL = "***";
 
@@ -21,7 +21,7 @@ public class BinarySearchUser
                SENTINEL + " to quit): ";
 
           final String[ ] names = {"Ada", "Ben", "Carol", "Dave", "Ed", "Frank",
-                   "Gerri", "Helen", "Iggy", "Joan"};
+                   "Gerri", "Helen", "Iggy", "Joan", "Alan"};
 
           final String FOUND = "That name was found at index ";
 
@@ -47,6 +47,7 @@ public class BinarySearchUser
                else
                    System.out.println (NOT_FOUND + (-index - 1)); 
           } // while
+          sc.close();
   } // method run
 
 

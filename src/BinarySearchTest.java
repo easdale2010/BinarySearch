@@ -14,7 +14,7 @@ public class BinarySearchTest
     } // method main 
     
     final String[ ] names = {"Ada", "Ben", "Carol", "Dave", "Ed", "Frank",
-                   "Gerri", "Helen", "Iggy", "Joan"};
+                   "Gerri", "Helen", "Iggy", "Joan", "Alan"};
 
     @Test 
     public void binarySearchTest1() 
@@ -49,11 +49,17 @@ public class BinarySearchTest
     @Test
     public void binarySearchTest6()
     {                                      
-        assertEquals (-11, binarySearch (names, "Joseph"));       
+        assertEquals (-12, binarySearch (names, "Joseph"));       
+    } // method factorialTest6
+    
+    @Test
+    public void binarySearchTest7()
+    {                                      
+        assertEquals (-2, binarySearch (names, "Alan"));       
     } // method factorialTest6
     
     @Test (expected = ClassCastException.class)
-    public void binarySearchTest7()
+    public void binarySearchTest8()
     {                                      
         binarySearch (names, 7);       
     } // method factorialTest7
